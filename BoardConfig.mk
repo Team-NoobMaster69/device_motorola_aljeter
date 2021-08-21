@@ -73,7 +73,6 @@ TARGET_OTA_ASSERT_DEVICE := jeter,aljeter
 HWUI_COMPILE_FOR_PERF := true
 
 # GPS
-TARGET_NO_RPC := true
 TARGET_USES_HARDWARE_QCOM_GPS := false
 
 # Display
