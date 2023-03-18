@@ -113,6 +113,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.vt_avail_ovr=1 \
     persist.dbg.wfc_avail_ovr=1
 
+# DRM
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.hwc_set_default_colormode=true \

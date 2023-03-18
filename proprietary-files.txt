@@ -832,22 +832,34 @@ vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|000e0d2ac4450c0ad8baca06985bc
 vendor/lib64/vendor.qti.latency@2.0.so|44e613964229ad11c5a69d1861b24f5897eff1d7
 vendor/lib64/vendor.qti.latency@2.1.so|3f5e3be5fcbc96b5f4c87dd76cfcc0e1dc858ad0
 
-# DRM and SEE - from dpl_sprout - RKQ1.200928.002
-vendor/bin/qseecomd|04e6aea39b5a357836310b4e3d5cd757a786ec4e
-vendor/lib/libQSEEComAPI.so|e30192367fb5f9ccd9f281d9e6e38fbaddfdd77b
-vendor/lib64/libGPreqcancel.so|cef7983d5aceb03b4c422731c838ead1a8f3fed4
-vendor/lib64/libGPreqcancel_svc.so|817fced1daa7913b363fdbebf2e0587e1f34b8eb
-vendor/lib64/libQSEEComAPI.so|86252d1363ce220cf213f02636495f41904e7ddd
-vendor/lib64/libStDrvInt.so|add517206707a8bd7f116b6b1554a16c51fe6668
-vendor/lib64/libdrmfs.so|0af7d14a3d9f906d2c95650ca748399882e746cc
-vendor/lib64/libdrmtime.so|beac981103d7e61cf58be46f0729ec123f56b629
-vendor/lib64/libqisl.so|529d7e20bb33147fe3404c1a58d266e49228046a
-vendor/lib64/librpmb.so|98c96895dbf6c7ab8791c76a9109a89cc692b85b
-vendor/lib64/libsecureui.so|172515cb527477c4669c43529628586aeee264bc
+# DRM - from LA.UM.9.6.2.r1-04200-89xx.0
+vendor/bin/qseecomd|12fde638ad4528c06fe336342862fd0ffc033dd0
+vendor/lib/libQSEEComAPI.so|961b8c99bf5d2a53b607cebf399fbdafb48c9bc6
+vendor/lib64/libdrmfs.so|1654e650448a464b9de765c9ce80ba5a29e8b9c1
+vendor/lib64/libdrmtime.so|b3f024dae4aaa62c4fc33965847d1627387c6b56
+vendor/lib64/libGPreqcancel.so|d851bcc3e1b982d8403dc86921c5dd9274f71dc5
+vendor/lib64/libGPreqcancel_svc.so|760427f2139aec09a74b50a80153e461fbc6b272
+vendor/lib64/libcpion.so|602ffa6e92be0f2a19c8de782e1601135c7dd2a8
+vendor/lib64/libhdcpsrm.so|8822f0408bdcc11dfc661321bfd3c253f0306e0c
+vendor/lib64/liboemcrypto.so|cff69ca64f9015e17cdcc2c45c992d262d864013
+vendor/lib64/libqisl.so|e9c402aed643ee094daaf495f1a3a1f29542d602
+vendor/lib64/libQSEEComAPI.so|17cf281138050f87e29b2b71e63d131249b10f6f
+vendor/lib64/librpmb.so|a5ee7dfbbae868a253d7413c866800ea1146d7c8
+vendor/lib64/libSecureUILib.so|e9dd8017f40691925c59a074705be7cf11130780
+vendor/lib64/libsecureui.so|eef8db680df8e9b47d4725433cd0d3886cc8aa25
 vendor/lib64/libsecureui_svcsock.so|2232f56927964f10d41868919d94711930d50ed0
-vendor/lib64/libssd.so|1e2243f7eb5d36544a5ae51166d748b7b30e63c6
-vendor/lib64/libops.so|3c763226ccc3b0f32e131af71a458b41bf2b3d8d
-vendor/lib64/libspl.so|f8bbe0322ce06a545f5dc79c888183ac61673b68
+vendor/lib64/libssd.so|6dcbfc531e69a3c7eeaf21e85ac0202b8fa82d55
+vendor/lib64/libStDrvInt.so|7c921ee6db896233f9ea03f1fb3a9b7d9434e7dc
+
+# DRM - from Lmi 11/RKQ1.200826.002/V12.2.4.0.RJKMIXM
+vendor/lib64/libops.so|b2223e64db9d8f84262da7a8621013d3c63b6c98
+vendor/lib64/libspl.so|0fa8c0711f72fc8a914dce044cf8dddd79ee62e1
+
+# DRM - Widevine - from Crosshatch - 11/RQ3A.210605.005/7349499
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|57d280849768bc5d5e9e954b9ac90a5a31c54172
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|6b00f42dc85becc58f303bc4588331239c5c83aa
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+vendor/lib64/libwvhidl.so|ae215b1afd38cda71818dfde44c6186bd4ec2cb1
 
 # Dolby from - motorola/sofiap_ao_eea/sofiap_sprout:12/S0PR32M.44-11-8/4e5071:user/release-keys
 system_ext/etc/permissions/com.motorola.dolby.dolbyui.xml|d5c25b2522094346257a5ff0f4317c992b54d1fc
@@ -911,12 +923,6 @@ vendor/bin/dspservice|c7809e32581d5c6efac65a3a7689f43526c17bb8
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
 vendor/lib/vendor.qti.hardware.dsp@1.0.so|41bdb4d9eda88cebfbc3bc6db64ff875416dbf5a
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so|5f30d9c5fff738e6194a36a5b93372fa32ec0471
-
-# DRM - Qualcomm Trusted Execution Enviornment - from dpl_sprout - RKQ1.200928.002
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|f8dc88c7166ffc2c1d997e7d5f16a8eb69c37cfc
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|b3458f1507146fe99f2f70ed1883ae1ceb2e17bb
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|29130d7b0050885a6b455390a02a8615563403c4
 
 # Gatekeeper - from LA.UM.9.6.3.r1-06200-89xx.0
 vendor/lib64/hw/gatekeeper.msm8937.so|7be56a403c30f093865f08bf0f0335aeb99ec7fd
@@ -1365,19 +1371,11 @@ vendor/bin/time_daemon|e62d164b8c8b30743837896d4c5e8bca39b364e6
 vendor/etc/init/init.time_daemon.rc|a89ed147a681b30ecf5e78dd2df6b18e1bf7a18b
 vendor/lib64/libtime_genoff.so|3f57de1aeb7aa113a0a579cebed85ab4405b9b49
 
-# TUI - from dpl_sprout - RKQ1.200928.002
+# TUI - from LA.UM.9.6.2.r1-04200-89xx.0
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|e8d97981d09a4e34907d13bcbbd10f03572c9218
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|960561ba01e28777e099294fb0a9a749e2b2a775
-
-# Widevine - from dpl_sprout - RKQ1.200928.002
-vendor/bin/hw/android.hardware.drm@1.3-service.widevine|92e4797cb000e86ba74fba9da2c014d7ec8fa1a6
-vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
-vendor/lib64/libcpion.so|388b27050e97bdfdee0d98428f223611b761f252
-vendor/lib64/libhdcpsrm.so|85c4b0f714b3946d94d32811d4c85ad2dd244d65
-vendor/lib64/liboemcrypto.so|0ed2cd7b6d34d2043956a7643b22c0fc212282b1
-vendor/lib64/libwvhidl.so|61b056c74731122836e57f1110f2174fd05cbfdb
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|933eb7026797f3dadad3d10fd69443b11f6563f3
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|16baab27397ad493e845515c20ac0c0c063c775d
 
 # Wi-Fi
 vendor/bin/cnss-daemon
