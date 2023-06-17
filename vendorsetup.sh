@@ -14,6 +14,11 @@ echo ""
 git clone -b aljeter-337 https://github.com/Team-NoobMaster69/kernel_motorola_msm8937.git kernel/motorola/msm8937
 echo ""
 
+# KSU
+cd kernel/motorola/msm8937
+rm -rf KernelSU && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -
+cd -
+
 # Dependencies
 echo ""
 git clone -b lineage-18.1 https://github.com/LineageOS/android_external_sony_boringssl-compat external/sony/boringssl-compat
