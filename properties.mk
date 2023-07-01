@@ -80,6 +80,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.fastbootd.available=true
 
+# FBE
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.volume.contents_mode=aes-256-xts
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.hwc_set_default_colormode=true \
