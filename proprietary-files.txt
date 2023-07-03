@@ -893,6 +893,12 @@ vendor/lib64/libets_fp_et5.so|a629467d966b679eeec75f009748abf61b63b1b6
 vendor/lib64/libets_teeclient.so|5c800a3042828c73f068c35b4c6ddd9d9f6fe48a
 vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so|c39c16ac4c38a5aa8580dad4d2f066e0a5872d98
 
+# Fingerprint - from X00P - QKQ1.191002.002-17.00.2003.23-20200401
+lib/android.hardware.biometrics.fingerprint@2.1.so:product/lib/android.hardware.biometrics.fingerprint@2.1.so|422fc819a16e49d3e8a9206afd9fb969b0ea6215
+lib64/android.hardware.biometrics.fingerprint@2.1.so:product/lib64/android.hardware.biometrics.fingerprint@2.1.so|2d0231c28533f12b63742f66d411c04969020a0a
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|7c24ee7ee494f4884bb950f4665040ba26bd2696
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|3a24302bb747055c7318f879838d1684221de7a7
+
 # Keymaster - from deen_sprout - QPKS30.54-22-12
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|023a0e237fbc068a3191e91e5a1ec0ea5831d52b
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
